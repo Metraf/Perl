@@ -6,7 +6,7 @@ my $entree="";
 until ( $entree eq "quit")
 {	
 	print "Binaire pour texte à Binaire.\nTexte pour Binaire à Texte.\nQuit pour quitter :\n";
-	my $entree=<>;
+	$entree=<>;
 	chomp $entree;
 	if ($entree eq "binaire")
 {
@@ -29,3 +29,4 @@ print "$phrase en ASCII :\n$binary\n";
 
 
 	}#fin de la boucle UNTIL
+system 'clear';
