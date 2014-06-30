@@ -15,7 +15,8 @@ print "Texte en Binaire :\n";
 my $phrase=<>;
 chomp $phrase;
 my $binary = unpack "b*","$phrase"; 
-print "$phrase en binaire:\n$binary\n";
+print "Texte en binaire:\n$binary\n\n";
+<>;
 }
 elsif ($entree eq "texte")
 {
@@ -24,7 +25,8 @@ print "Binaire en Texte :\n";
 my $phrase=<>;
 chomp $phrase;
 my $binary = pack "b*","$phrase";
-print "$phrase en ASCII :\n$binary\n";
+print "Texte en ASCII :\n$binary\n\n";
+<>;
 }
 
 
