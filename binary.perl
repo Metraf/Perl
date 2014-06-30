@@ -2,7 +2,7 @@ use strict;
 use warnings;
 system 'clear';
 
-my $entree;
+my $entree="";
 until ( $entree eq "quit")
 {	
 	print "Binaire pour texte à Binaire.\nTexte pour Binaire à Texte.\nQuit pour quitter :\n";
