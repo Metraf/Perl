@@ -6,6 +6,8 @@ my $entree=<>;
 chomp $entree;
 until ($entree eq "quit")
 {
+	my $entree=<>;
+	chomp $entree;
 	if ($entree eq "binaire")
 {
 system 'clear';
