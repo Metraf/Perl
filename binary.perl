@@ -1,11 +1,11 @@
 use strict;
 use warnings;
 system 'clear';
-print "Binaire pour texte à Binaire.\nTexte pour Binaire à Texte.\nQuit pour quitter :\n";
-my $entree=<>;
-chomp $entree;
-until ($entree eq "quit")
-{
+
+my $entree;
+until ( $entree eq "quit")
+{	
+	print "Binaire pour texte à Binaire.\nTexte pour Binaire à Texte.\nQuit pour quitter :\n";
 	my $entree=<>;
 	chomp $entree;
 	if ($entree eq "binaire")
@@ -14,8 +14,8 @@ system 'clear';
 print "Texte en Binaire :\n";
 my $phrase=<>;
 chomp $phrase;
-my $binary = unpack "b*","$phrase";
-print "$binary\n";
+my $binary = unpack "b*","$phrase"; 
+print "$phrase en binaire:\n$binary\n";
 }
 elsif ($entree eq "texte")
 {
@@ -24,8 +24,8 @@ print "Binaire en Texte :\n";
 my $phrase=<>;
 chomp $phrase;
 my $binary = pack "b*","$phrase";
-print "$binary\n";
+print "$phrase en ASCII :\n$binary\n";
 }
 
 
-}#fin de la boucle UNTIL
+	}#fin de la boucle UNTIL
